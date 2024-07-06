@@ -1,0 +1,29 @@
+[project]
+name = "git-toolbox"
+version = "0.1.0"
+description = "Tools & utilities for the GitPython library."
+authors = [
+    {name = "redjax", email = "none@none.com"},
+]
+dependencies = [
+    "GitPython>=3.1.43",
+    "cyclopts>=2.9.3",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.5.0",
+    "pytest-xdist>=3.6.1",
+    "nox>=2024.4.15",
+]
